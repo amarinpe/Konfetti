@@ -8,6 +8,7 @@ import nl.dionsegijn.konfetti.core.models.Shape
 import nl.dionsegijn.konfetti.core.models.Size
 import nl.dionsegijn.konfetti.core.models.Vector
 import java.lang.Math.toRadians
+import java.security.SecureRandom
 import java.util.Random
 import kotlin.math.cos
 import kotlin.math.sin
@@ -20,7 +21,7 @@ import kotlin.math.sin
 class PartyEmitter(
     private val emitterConfig: EmitterConfig,
     private val pixelDensity: Float,
-    private val random: Random = Random(),
+    private val random: Random = SecureRandom(),
 ) : BaseEmitter() {
     // Keeping count of how many particles are created whilst running the emitter
     private var particlesCreated = 0
