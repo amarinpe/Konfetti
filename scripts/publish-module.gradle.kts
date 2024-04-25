@@ -84,7 +84,7 @@ afterEvaluate {
         }
     }
 
-    configure<SigningExtension> {
+    /*configure<SigningExtension> {
         // Get signing properties
         val properties = File(rootDir, "local.properties")
         if(properties.exists()) {
@@ -101,6 +101,6 @@ afterEvaluate {
         val pubExt = checkNotNull(extensions.findByType(PublishingExtension::class.java))
         val publication = pubExt.publications[PUBLICATION_NAME]
         sign(publication)
-    }
+    }*/
 }
 
